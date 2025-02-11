@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Capital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #d4af37;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        h1 {
+            color: #d4af37;
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            color: #b3b3b3;
+        }
+        .cta-button {
+            background-color: #d4af37;
+            color: #0a0a0a;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+        .cta-button:hover {
+            background-color: #b8860b;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function authenticate() {
+            let passcode = prompt("Enter the passcode to access the Telegram chat:");
+            if (passcode === "phantom2025") { 
+                window.location.href = "https://t.me/+_UMgSg0AqjNmZjEx";
+            } else {
+                alert("Incorrect passcode. Access denied.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Phantom Capital</h1>
+        <p><em>Mysterious, elusive, and sharp, like the market makers you hunt.</em></p>
+        <p>Join our exclusive VIP trading channel and gain access to premium market insights, signals, and strategies designed to outmaneuver the big players.</p>
+        <p><strong>Trade in the shadows. Profit like a phantom.</strong></p>
+        <button class="cta-button" onclick="authenticate()">Join Our Telegram</button>
+    </div>
+</body>
+</html>
